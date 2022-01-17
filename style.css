@@ -1,0 +1,58 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+:root {
+  --success-color: green;
+  --error-color: red;
+}
+form {
+  width: 300px;
+  background: #fff;
+  padding: 15px 40px 40px;
+  border: 1px solid #ccc;
+  margin: 50px auto 0;
+  border-radius: 5px;
+}
+.form-inline label,
+.form-inline input {
+  display: inline-block;
+  width: auto;
+  padding-right: 15px;
+}
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+label i {
+  color: #999;
+  font-size: 80%;
+}
+
+small {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+
+.error input {
+  border-color: var(--error-color);
+}
+
+.success input {
+  border-color: var(--success-color);
+}
+
+.error small {
+  color: var(--error-color);
+  visibility: visible;
+}
+
+.success small {
+  color: var(--success-color);
+  visibility: hidden;
+}
